@@ -1,0 +1,23 @@
+{
+  "name": "artwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1096.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express.js": "^1.0.0",
+    "firebase-admin": "^10.0.2",
+    "nodemailer": "^6.7.3",
+    "stripe": "^8.213.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

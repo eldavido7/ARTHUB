@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTHUB</title>
+
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+
+    <!-- hero section -->
+    <header class="hero-section">
+        <div class="content">
+            <img src="img/logo.png" class="logo" alt="">
+            <p class="sub-heading">best art collection anywhere</p>
+        </div>
+    </header>
+
+    <section id="crafted-products">
+
+    </section>
+
+    <!-- collections -->
+    <section class="collection-container">
+        <a href="/seller.html" class="collection">
+            <img src="img/local.png" alt="">
+            <p class="collection-title">local <br> art</p>
+        </a>
+
+        <a href="/seller.html" class="collection">
+            <img src="img/recycle.png" alt="">
+            <p class="collection-title">recycled <br> art</p>
+        </a>
+
+        <a href="/seller.html" class="collection">
+            <img src="img/gen.png" alt="">
+            <p class="collection-title">sculpted <br> art</p>
+        </a>
+    </section>
+
+    <section id="crafted-products-2"></section>
+   
+    <footer></footer>
+    
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+        getProducts('crafted', 'local', 'recycled', 'sculpted', 'drawn', 'painted').then(data => createProductSlider(data,
+         '#crafted-products', 'products'))
+         getProducts('crafted', 'local', 'recycled', 'sculpted', 'drawn', 'painted').then(data => createProductSlider(data,
+         '#crafted-products-2', 'products'))
+    </script>
+
+</body>
+</html>
